@@ -2,7 +2,7 @@ Summary:	Convert Gregorian dates to Discordian dates
 Summary(pl.UTF-8):	Tłumaczenie dat gregoriańskich na diskordiańskie
 Name:		ddate
 Version:	0.2.1
-Release:	1
+Release:	2
 License:	Public Domain
 Group:		Applications
 Source0:	https://github.com/bo0ts/ddate/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
