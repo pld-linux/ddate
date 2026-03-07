@@ -1,0 +1,11 @@
+--- ddate-0.2.1/ddate.c~	2012-06-19 23:57:14.000000000 +0200
++++ ddate-0.2.1/ddate.c	2026-03-07 23:12:08.533333437 +0100
+@@ -173,7 +173,7 @@
+ 
+ int
+ main (int argc, char *argv[]) {
+-    long t;
++    time_t t;
+     struct tm *eris;
+     int bob,raw;
+     struct disc_time hastur;

@@ -2,7 +2,7 @@ Summary:	Convert Gregorian dates to Discordian dates
 Summary(pl.UTF-8):	Tłumaczenie dat gregoriańskich na diskordiańskie
 Name:		ddate
 Version:	0.2.1
-Release:	2
+Release:	3
 License:	Public Domain
 Group:		Applications
 Source0:	https://github.com/bo0ts/ddate/archive/v%{version}.tar.gz?/%{name}-%{version}.tar.gz
@@ -10,6 +10,7 @@ Source0:	https://github.com/bo0ts/ddate/archive/v%{version}.tar.gz?/%{name}-%{ve
 # temporarily use util-linux mans tarball
 Source1:	http://www.mif.pg.gda.pl/homepages/ankry/man-PLD/util-linux-non-english-man-pages.tar.bz2
 # Source1-md5:	3c940c7e7fe699eaa2ddb1bffb3de2fe
+Patch0:		time_t.patch
 URL:		https://github.com/bo0ts/ddate/
 BuildRequires:	cmake >= 2.8
 BuildRequires:	rpmbuild(macros) >= 1.605
@@ -25,6 +26,7 @@ diskordiańskie.
 
 %prep
 %setup -q -a1
+%patch -P0 -p1
 
 %build
 %cmake .
